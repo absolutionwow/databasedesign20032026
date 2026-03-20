@@ -38,7 +38,7 @@ public class AuthenticationController
 
         public AuthenticationRepository()
         {
-            var client = new MongoClient("mongodb+srv://adpita1sem:ita2sem@cluster0.t0xutha.mongodb.net/");
+            var client = new MongoClient("mongodb+srv://adpita1sem:PASSWORD@cluster0.t0xutha.mongodb.net/");
             var database = client.GetDatabase("adpita1sem");
             _users = database.GetCollection<User>("users");
         }
